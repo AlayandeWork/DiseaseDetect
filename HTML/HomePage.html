@@ -18,7 +18,7 @@
             <div class = "middle_container_2_top">
                 <center><h1 class = "heading">Disease Detector</h1></center>
                 <!--Form Start-->
-                <form action="">
+                <form class="form_top_margin">
                     <div>
                         <label>Fullname</label>
                         <input name = "full_name" placeholder = "Full Name" />
@@ -32,7 +32,55 @@
 							<option value="Above 50">Above 50</option>
                         </select>
                     </div>
+                    <div>
+                        <label>Gender</label>
+                        <select name="gender">
+                            <option value = "Male">Male</option>
+                            <option value = "Female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <li>
+                            <label>
+                                Dehydration:
+                                <input type="radio" name="dehydration" value="Yes"> Yes
+                                <input type="radio" name="dehydration" value="No"> No
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Fatigue:
+                                <input type="radio" name="fatigue" value="Yes"> Yes
+                                <input type="radio" name="fatigue" value="No"> No
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Cough:
+                                <input type="radio" name="cough" value="Yes"> Yes
+                                <input type="radio" name="cough" value="No"> No
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Fever:
+                                <input type="radio" name="fever" value="Yes"> Yes
+                                <input type="radio" name="fever" value="No"> No
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Vomiting:
+                                <input type="radio" name="vomiting" value="Yes"> Yes
+                                <input type="radio" name="vomiting" value="No"> No
+                            </label>
+                        </li>
+                    </div>
+                    <div>
+                        <input type="submit" value="save">
+                    </div>
                 </form>
+                <!--Form End-->
             </div>
             <div class = "middle"></div>
             <div class = "butt">
