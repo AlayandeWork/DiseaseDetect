@@ -1,0 +1,23 @@
+Disease a particular abnormal condition that negetively affects the structure or function of all or part
+of an organism and is not immediately due to any external injury. Diseases are often known to be medical
+conditions that are associated with specific signs and symptoms - Wikipedia.
+
+The cause, nature and evolution of various kind of diseases over the years has impedes the lives of many
+round the world. For centuries man has tried to reduce the causaulity of that which ravages his existence.
+
+An early detection and symptoms may be the only way for men to have a short victory, reason why you as a
+data scientist with the hope of charting new course with a system like "Hygieia" aiming to focus on few
+of the following diseases:
+
+1. Malaria
+2. Parkinson
+3. HIV / AID
+4. Cholera
+5. Ebola
+6. Covid 19
+
+Your aim as a data scientist is the following:
+- Collect various dataset on the above diseases.
+- Organise your disease information in a mysql database.
+- Apply your pandas for correlation analysis between the various disease by symptoms.
+- Ensure a good classification, dectection and predicting of the diseases.

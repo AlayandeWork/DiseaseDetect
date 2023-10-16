@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top_empty_container{
+    height: 200px;
+}
+
+.display_container{
+    display: flex;
+    height: 800px;
+}
+
+.bottom_empty_container{
+    height: 200px;
+}
+
+.middle_container_1{
+    width: 10%;
+}
+
+.middle_container_2{
+    width: 80%;
+    border: 3px solid blue
+}
+
+.middle_container_2_top{
+    height: 50px;
+    border: 3px solid brown;
+    background-color: black;
+}
+
+.heading{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.middle_container_3{
+    width: 10%;
+}
+
+.middle{
+    height: 710px;
+}
+
+.butt{
+    background-color: black;
+    height: 35px;
+}
+
+.copyright {
+    color: white;
+}
