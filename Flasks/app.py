@@ -1,27 +1,43 @@
-from flask import Flask, render_template, request
+from flask import Flask, request, render_template
+import mysql.connector
 
 app = Flask(__name)
 
-# Route to render the symptom input form
+# Configure your MySQL connection here
+db = mysql.connector.connect(
+    host="your_host",
+    user="your_username",
+    password="your_password",
+    database="your_database"
+)
+
 @app.route('/')
-def input_form():
-    return render_template('HomePage.html')
+def index():
+    return render_template('Homepage.html')
 
-# Route to handle form submission and display the result
 @app.route('/predict', methods=['POST'])
-def predict_disease():
-    # Retrieve user inputs from the form
-    name = request.form['name']
-    age_range = request.form['age_range']
-    symptoms = request.form.getlist('symptoms')  # Use getlist for checkboxes/radio buttons
+def predict():
+	# Retrieve user inputs from the form
+    	user_name = request.form['full_name']
+    	age_range = request.form['age']
+    	dehydration = request.form['dehydration']
+	fatigue = request.form['fatigue']
+	cough = request.form['cough']
+	fever = request.form['fever']
+	vomiting = request.form['vomiting']
 
-    # Implement your prediction logic here using the user inputs and database
+    # Retrieve other symptoms as well
 
-    # For now, let's assume a simple prediction
-    predicted_disease = "Malaria"  # Replace with your actual prediction logic
+    # Store user inputs in the MySQL database
+    cursor = db.cursor()
+    cursor.execute("INSERT INTO Cholera (user_name, age_range, symptom1) VALUES (%s, %s, %s)", (user_name, age_range, symptom1))
+    db.commit()
 
-    # Render the result page and pass the predicted disease as a variable
-    return render_template('result.html', name=name, age_range=age_range, predicted_disease=predicted_disease)
+    # Perform prediction logic based on the user's symptoms
+    # You'll need to implement the prediction logic here
+    predicted_disease = predict_disease(symptom1, symptom2, ...)
+
+    return f"Hello {user_name}, based on your symptoms, you might have {predicted_disease}."
 
 if __name__ == '__main__':
     app.run(debug=True)
