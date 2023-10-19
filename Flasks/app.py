@@ -30,7 +30,7 @@ def predict():
 
     # Store user inputs in the MySQL database
     cursor = db.cursor()
-    cursor.execute("INSERT INTO Cholera (user_name, age_range, symptom1) VALUES (%s, %s, %s)", (user_name, age_range, symptom1))
+    cursor.execute("INSERT INTO Cholera (full_name, age, dehydration, fatigue, cough, fever, vomiting) VALUES (%s, %s, %s)", (full_name, age, dehydration, fatigue, cough, fever, vomiting))
     db.commit()
 
     # Perform prediction logic based on the user's symptoms
