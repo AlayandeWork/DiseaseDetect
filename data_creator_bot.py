@@ -17,7 +17,7 @@ def id(nrows):
     return ID
 
 def gender(nrows):
-    Genders = ['male', 'female']
+    Genders = ['Male', 'Female']
     Gender = []
     for items in range(nrows):
         Gender.append(random.choice(Genders))
@@ -25,7 +25,7 @@ def gender(nrows):
 
 '''def fever(nrows):
     diag = ['Yes', 'No']
-    status = []
+    status = []30
     for items in range(nrows):
         status.append(random.choice(diag))
     return status
@@ -33,7 +33,7 @@ def gender(nrows):
     
 def symptom(nrows):
     diag = ['Yes', 'No']
-    Symptoms = ['fever', 'cold', 'sweating', 'headache', 'muscle pain', 'nausea', 'vomiting']
+    Symptoms = ["Diarrhea", "Dehydration", "Abdominal_Cramps", "Irritability", "Restlessness", "Lethargy", "Vomiting"]
     symptom_data = {}
 
     for symptom_name in Symptoms:
@@ -63,9 +63,9 @@ malaria={'id':ids,'Gender':genders}
 malaria.update(symptom_data)
 
 malaria_df = pd.DataFrame(malaria)
-malaria_df.to_csv('malaria_df.csv', index=False)
+malaria_df.to_csv('cholera_data.csv', index=False)
 #print(ids)
-#print(genders)
+#print(genders)30
 #print(fever_statuses)
 #for symptom_name, status_list in symptom_data.items():
     #print(f"{symptom_name}: {status_list}")
