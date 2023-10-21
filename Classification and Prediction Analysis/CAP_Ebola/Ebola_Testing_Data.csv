@@ -1,4 +1,4 @@
-id,Gender,Fatigue,Fever,Hemorrhaging,Headache,Sore_Throat,Skin_Rash,Vomiting
+id,Gender,fatigue,Fever,Hemorrhaging,Headache,Sore_Throat,Skin_Rash,Vomiting
 1,Female,Yes,No,No,No,Yes,Yes,No
 2,Male,Yes,Yes,Yes,Yes,No,Yes,No
 3,Male,No,Yes,Yes,No,No,Yes,Yes
