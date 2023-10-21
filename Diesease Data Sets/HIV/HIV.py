@@ -20,7 +20,7 @@ def gender(nrows):
 
 def symptom(nrows):
     multiple_diag = ["Yes", "No"]
-    Symptoms = ["Chronic Diarrhea", "Skin Irritation", "Genital Ulcer", "Persistent Fatigue", "Severe Headache", "Weight Loss", "Vomiting"]
+    Symptoms = ["Chronic_Diarrhea", "Skin_Irritation", "Genital_Ulcer", "Persistent_Fatigue", "Severe_Headache", "Weight_Loss", "Vomiting"]
     symptom_data = {}
 
     for symptoms_name in Symptoms:
